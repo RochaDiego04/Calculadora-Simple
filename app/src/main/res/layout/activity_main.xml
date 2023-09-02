@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/header" />
+
+
+    <EditText
+        android:id="@+id/activity_main_numero1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:hint="@string/editNumero1"
+        android:inputType="numberDecimal"
+        android:textSize="12dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txtNumero1" />
+
+    <EditText
+        android:id="@+id/activity_main_numero2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="@string/editNumero2"
+        android:inputType="numberDecimal"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txtNumero2" />
+
+    <!-- LinearLayout horizontal para los botones -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/activity_main_button_sumar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:onClick="sumar"
+            android:text="@string/btnSumar"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/activity_main_button_restar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:onClick="restar"
+            android:text="@string/btnRestar"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/activity_main_button_multiplicar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:onClick="multiplicar"
+            android:text="@string/btnMultiplicar"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/activity_main_button_dividir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button"
+            android:onClick="dividir"
+            android:text="@string/btnDividir"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/activity_main_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:hint="@string/editResultado"
+        android:inputType="numberDecimal"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txtResultado" />
+
+</LinearLayout>

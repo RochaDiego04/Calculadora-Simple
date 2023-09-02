@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculadora Básica</string>
+    <string name="editNumero1">Ingresa el número 1</string>
+    <string name="txtNumero1">Número 1</string>
+    <string name="editNumero2">Ingresa el número 2</string>
+    <string name="txtNumero2">Número 2</string>
+    <string name="btnSumar">+</string>
+    <string name="btnRestar">-</string>
+    <string name="btnMultiplicar">*</string>
+    <string name="btnDividir">/</string>
+
+    <string name="editResultado"></string>
+    <string name="txtResultado">Resultado</string>
+</resources>
