@@ -11,4 +11,6 @@
 
     <string name="editResultado"></string>
     <string name="txtResultado">Resultado</string>
+
+    <string name="activity_main_error">Rellena el campo</string>
 </resources>
